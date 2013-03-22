@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'CloudBank' target in the 'CloudBank' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
