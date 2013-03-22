@@ -1,1 +1,4 @@
 
+[submodule "SoundCloudAPI"]
+	path = SoundCloudAPI
+	url = git://github.com/soundcloud/cocoa-api-wrapper.git
