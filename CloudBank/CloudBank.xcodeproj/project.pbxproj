@@ -13,7 +13,28 @@
 		01A36FD716FC21A00047C96A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 01A36FD516FC21A00047C96A /* Credits.rtf */; };
 		01A36FDA16FC21A00047C96A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A36FD916FC21A00047C96A /* AppDelegate.m */; };
 		01A36FDD16FC21A00047C96A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01A36FDB16FC21A00047C96A /* MainMenu.xib */; };
+		01A36FF416FC353C0047C96A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A36FF216FC348D0047C96A /* AudioToolbox.framework */; };
+		01A36FF516FC35460047C96A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A36FF016FC34800047C96A /* Security.framework */; };
+		01A36FF616FC354E0047C96A /* SoundCloudAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A36FEA16FC23410047C96A /* SoundCloudAPI.framework */; };
+		01A36FFB16FC40740047C96A /* OAuth2Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A36FF916FC40650047C96A /* OAuth2Client.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01A36FE916FC23410047C96A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01A36FE316FC23410047C96A /* SoundCloudAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 94535F86123FAFDF00BD668A;
+			remoteInfo = SoundCloudAPI.framework;
+		};
+		01A36FEB16FC23410047C96A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01A36FE316FC23410047C96A /* SoundCloudAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = SoundCloudAPI;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		01A36FC316FC21A00047C96A /* CloudBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +50,10 @@
 		01A36FD816FC21A00047C96A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		01A36FD916FC21A00047C96A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		01A36FDC16FC21A00047C96A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		01A36FE316FC23410047C96A /* SoundCloudAPI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SoundCloudAPI.xcodeproj; path = ../SoundCloudAPI/SoundCloudAPI.xcodeproj; sourceTree = "<group>"; };
+		01A36FF016FC34800047C96A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		01A36FF216FC348D0047C96A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		01A36FF916FC40650047C96A /* OAuth2Client.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuth2Client.framework; path = "../../../Library/Developer/Xcode/DerivedData/CloudBank-ggdsylmkyuzytbcxcykwknnrucdc/Build/Products/Debug/OAuth2Client.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +61,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01A36FFB16FC40740047C96A /* OAuth2Client.framework in Frameworks */,
+				01A36FF616FC354E0047C96A /* SoundCloudAPI.framework in Frameworks */,
+				01A36FF516FC35460047C96A /* Security.framework in Frameworks */,
+				01A36FF416FC353C0047C96A /* AudioToolbox.framework in Frameworks */,
 				01A36FC716FC21A00047C96A /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,6 +75,7 @@
 		01A36FBA16FC219F0047C96A = {
 			isa = PBXGroup;
 			children = (
+				01A36FE316FC23410047C96A /* SoundCloudAPI.xcodeproj */,
 				01A36FCC16FC21A00047C96A /* CloudBank */,
 				01A36FC516FC21A00047C96A /* Frameworks */,
 				01A36FC416FC21A00047C96A /* Products */,
@@ -63,6 +93,9 @@
 		01A36FC516FC21A00047C96A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				01A36FF916FC40650047C96A /* OAuth2Client.framework */,
+				01A36FF216FC348D0047C96A /* AudioToolbox.framework */,
+				01A36FF016FC34800047C96A /* Security.framework */,
 				01A36FC616FC21A00047C96A /* Cocoa.framework */,
 				01A36FC816FC21A00047C96A /* Other Frameworks */,
 			);
@@ -100,6 +133,15 @@
 				01A36FD516FC21A00047C96A /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		01A36FE416FC23410047C96A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01A36FEA16FC23410047C96A /* SoundCloudAPI.framework */,
+				01A36FEC16FC23410047C96A /* libSoundCloudAPI.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,12 +183,35 @@
 			mainGroup = 01A36FBA16FC219F0047C96A;
 			productRefGroup = 01A36FC416FC21A00047C96A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 01A36FE416FC23410047C96A /* Products */;
+					ProjectRef = 01A36FE316FC23410047C96A /* SoundCloudAPI.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				01A36FC216FC219F0047C96A /* CloudBank */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		01A36FEA16FC23410047C96A /* SoundCloudAPI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SoundCloudAPI.framework;
+			remoteRef = 01A36FE916FC23410047C96A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		01A36FEC16FC23410047C96A /* libSoundCloudAPI.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSoundCloudAPI.a;
+			remoteRef = 01A36FEB16FC23410047C96A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		01A36FC116FC219F0047C96A /* Resources */ = {
@@ -264,9 +329,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/CloudBank-ggdsylmkyuzytbcxcykwknnrucdc/Build/Products/Debug\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CloudBank/CloudBank-Prefix.pch";
+				HEADER_SEARCH_PATHS = "SoundCloudAPI/**";
 				INFOPLIST_FILE = "CloudBank/CloudBank-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -276,9 +350,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/CloudBank-ggdsylmkyuzytbcxcykwknnrucdc/Build/Products/Debug\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CloudBank/CloudBank-Prefix.pch";
+				HEADER_SEARCH_PATHS = "SoundCloudAPI/**";
 				INFOPLIST_FILE = "CloudBank/CloudBank-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
